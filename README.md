@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ferramenta de Análise de Vagas
 
-## Getting Started
+## Escopo do Projeto
 
-First, run the development server:
+Este projeto visa criar uma ferramenta para ajudar estudantes e desenvolvedores a planejar seu aprendizado com base nas descrições de vagas de emprego. A ferramenta permite que o usuário cole a descrição de uma vaga e receba um detalhamento das tecnologias envolvidas, bem como um roadmap de estudo para melhorar seus conhecimentos.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologias Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework React para construção de aplicações web. Utilizei Next.js para criar tanto o frontend quanto o backend do projeto.
+- **TypeScript**: Linguagem que adiciona tipagem estática ao JavaScript, ajudando a evitar erros e a melhorar a manutenção do código.
+- **Pacote de Frontend**: Ant Design: Pacote de UI simples será utilizado para construir a interface do usuário.
+- **Groq**: API Generativa usada para processar a descrição da vaga e gerar o roadmap de estudo.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Frontend
 
-## Learn More
+- **Interface do Usuário**: TODO
 
-To learn more about Next.js, take a look at the following resources:
+### Backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **API Routes**: Utilizamos as **API Routes** do Next.js para criar a lógica do backend. As rotas estão localizadas na pasta `app/api` e são responsáveis por manipular as requisições HTTP e interagir com a API do Groq.
+  - **Classe de Serviço (`groqService.ts`)**: Encapsula a lógica de interação com a API do Groq. Faz a chamada para a API e retorna as respostas necessárias.
+  - **Rota de Teste (`test-groq`)**: Permite verificar a integração com a API do Groq e realizar testes iniciais.
+  - **Rota Principal de Análise (`analyze-job`)**: Recebe a descrição da vaga, cria o prompt, e faz a chamada para a API do Groq. Esta rota processa a descrição da vaga e retorna o detalhamento das tecnologias e o roadmap de estudo.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Aprendizado
 
-## Deploy on Vercel
+Este projeto tem sido uma excelente oportunidade de aprendizado, especialmente considerando que eu não tinha experiência prévia com Next.js, TypeScript, e API Routes. Estou explorando e entendendo como essas tecnologias funcionam juntas para criar uma aplicação completa. A configuração do projeto, a utilização do App Router e a integração com a API Generativa são novos desafios durante o desenvolvimento.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Próximos Passos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este README será atualizado conforme o projeto avança e novas funcionalidades são adicionadas.
