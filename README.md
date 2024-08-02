@@ -34,7 +34,7 @@ Este projeto visa criar uma ferramenta para ajudar estudantes e desenvolvedores 
 
 ### Backend
 
-- **API Routes**: Utilizamos as **API Routes** do Next.js para criar a lógica do backend. As rotas estão localizadas na pasta `app/api` e são responsáveis por manipular as requisições HTTP e interagir com a API do Groq.
+- **API Routes**: Utilizei as **API Routes** do Next.js para criar a lógica do backend. As rotas estão localizadas na pasta `app/api` e são responsáveis por manipular as requisições HTTP e interagir com a API do Groq.
   - **Classe de Serviço (`groqService.ts`)**: Encapsula a lógica de interação com a API do Groq. Faz a chamada para a API e retorna as respostas necessárias.
   - **Rota de Teste (`test-groq`)**: Permite verificar a integração com a API do Groq e realizar testes iniciais.
   - **Rota Principal de Análise (`analyze-job`)**: Recebe a descrição da vaga, cria o prompt, e faz a chamada para a API do Groq. Esta rota processa a descrição da vaga e retorna o detalhamento das tecnologias e o roadmap de estudo.
@@ -48,8 +48,14 @@ Este projeto visa criar uma ferramenta para ajudar estudantes e desenvolvedores 
 
 ## Aprendizado
 
-Este projeto tem sido uma excelente oportunidade de aprendizado, especialmente considerando que eu não tinha experiência prévia com Next.js, TypeScript, e API Routes. Estou explorando e entendendo como essas tecnologias funcionam juntas para criar uma aplicação completa. A configuração do projeto, a utilização do App Router e a integração com a API Generativa são novos desafios durante o desenvolvimento.
+Este projeto tem sido uma excelente oportunidade de aprendizado, especialmente considerando que eu não tinha experiência prévia com Next.js, TypeScript, e API Routes. Explorando e entendendo como essas tecnologias funcionam juntas pude criar uma aplicação completa. A configuração do projeto, a utilização do App Router e a integração com a API Generativa são novos desafios durante o desenvolvimento.
 
-## Próximos Passos
+## Extras
 
-Este README será atualizado conforme o projeto avança e novas funcionalidades são adicionadas.
+### Tema escuro
+
+Sempre tive curiosidade em entender o funcionamento básico de um tema escuro. Devido à facilidade proporcionada pelo Ant Design, decidi implementá-lo como um desafio.
+
+### Tradução
+
+Em outro projeto pessoal, surgiu a ideia de traduzir os textos. Como esse projeto possui poucos textos, decidi aprender a fazer isso para, posteriormente, utilizar em meu projeto.

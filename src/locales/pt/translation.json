@@ -6,8 +6,6 @@
     "lightTheme": "Tema Claro",
     "designedBy": "Design e desenvolvimento por Ronaldo Coutinho",
     "analyze": "Analizar",
-    "homeTitle": "Bem-vindo à Nossa Ferramenta",
-    "homeDescription": "Esta ferramenta ajuda a analisar descrições de vagas e fornece um roadmap detalhado para aprender as tecnologias necessárias.",
     "analyzeNow": "Analisar Agora",
     "describeJob": "Descreva a oferta de emprego",
     "pasteJobDescription": "Cole a descrição da vaga aqui...",
@@ -22,5 +20,13 @@
     "technologies": "Tecnologias",
     "enterStacks": "Insira as stacks com as quais você trabalha...",
     "enterTechnologies": "Insira as tecnologias que você domina...",
-    "jobDescriptionLabel": "Descrição da Vaga"
+    "jobDescriptionLabel": "Descrição da Vaga",
+    "homeTitle": "Bem-vindo à Nossa Ferramenta de Análise de Vagas",
+    "homeDescription": "Este aplicativo foi criado para ajudar estudantes e desenvolvedores a traçar um plano de aprendizado eficaz com base nas exigências das vagas de emprego. Ao colar a descrição de uma vaga, você receberá um detalhamento das tecnologias envolvidas e um roadmap de estudo personalizado para melhorar suas chances de sucesso no mercado de trabalho.",
+    "instructionsTitle": "Para usar a ferramenta:",
+    "instruction1": "1. Cole a descrição da vaga no campo de entrada designado.",
+    "instruction2": "2. Informe seu nível de experiência atual(Opcional).",
+    "instruction3": "3. Especifique sua stack atual e liste as tecnologias com as quais você já está familiarizado.",
+    "instruction4": "4. Clique em 'Analisar Agora' para obter um detalhamento e roadmap de estudo personalizado para o seu perfil.",
+    "instruction5": "Você também pode alternar entre os modos claro e escuro, e escolher o idioma de sua preferência utilizando os botões disponíveis na interface."
 }

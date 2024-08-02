@@ -6,8 +6,6 @@
     "lightTheme": "Light Theme",
     "designedBy": "Designed and developed by Ronaldo Coutinho",
     "analyze": "Analyze",
-    "homeTitle": "Welcome to Our Tool",
-    "homeDescription": "This tool helps you analyze job descriptions and provides a detailed roadmap for learning the required technologies.",
     "analyzeNow": "Analyze Now",
     "describeJob": "Describe the job offer",
     "pasteJobDescription": "Paste the job description here...",
@@ -22,5 +20,14 @@
     "technologies": "Technologies",
     "enterStacks": "Enter the stacks you work with...",
     "enterTechnologies": "Enter the technologies you are proficient in...",
-    "jobDescriptionLabel": "Job Description"
+    "jobDescriptionLabel": "Job Description",
+    "homeTitle": "Welcome to Our Job Analysis Tool",
+    "homeDescription": "This application was created to help students and developers craft an effective learning plan based on job requirements. By pasting a job description, you will receive a detailed breakdown of the required technologies and a personalized study roadmap to improve your chances of success in the job market.",
+    "instructionsTitle": "To use the tool:",
+    "instruction1": "1. Paste the job description into the designated input field.",
+    "instruction2": "2. Enter your current experience level.",
+    "instruction3": "3. Specify your current stack and list the technologies you are already familiar with.",
+    "instruction4": "4. Click 'Analyze Now' to get a breakdown and study roadmap tailored to your profile.",
+    "instruction5": "You can also switch between light and dark modes, and choose your preferred language using the buttons available on the interface."
+
 }

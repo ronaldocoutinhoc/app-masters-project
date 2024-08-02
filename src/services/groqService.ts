@@ -2,14 +2,9 @@ import Groq from "groq-sdk";
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY as string });
 
-interface GroqMessage {
-    role: string;
-    content: string;
-}
-
 interface GroqChoice {
     message: {
-        content: string | null;  // Permite null conforme o erro encontrado
+        content: string | null;
     };
 }
 

@@ -62,7 +62,7 @@ export default function AnalyzeJobPage() {
                 <Form.Item
                     label={t('jobDescriptionLabel')}
                     name="jobDescription"
-                    rules={[{ required: true, message: t('enterJobDescription') }]} // Adiciona validação obrigatória
+                    rules={[{ required: true, message: t('enterJobDescription') }]}
                 >
                     <TextArea
                         rows={10}

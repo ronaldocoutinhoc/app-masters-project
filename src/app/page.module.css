@@ -2,10 +2,27 @@
   padding: 20px 100px;
 }
 
+.languageBtn {
+  position: absolute !important;
+  right: 0;
+}
 
+.themeBtn {
+  position: absolute !important;
+  right: 50px;
+}
 
 @media (max-width: 768px) {
   .content {
     padding: 0 20px;
+  }
+
+  .languageBtn {
+    position: relative !important;
+  }
+
+  .themeBtn {
+    position: relative !important;
+    right: 0px;
   }
 }
