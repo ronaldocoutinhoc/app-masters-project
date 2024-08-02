@@ -8,14 +8,29 @@ Este projeto visa criar uma ferramenta para ajudar estudantes e desenvolvedores 
 
 - **Next.js**: Framework React para construção de aplicações web. Utilizei Next.js para criar tanto o frontend quanto o backend do projeto.
 - **TypeScript**: Linguagem que adiciona tipagem estática ao JavaScript, ajudando a evitar erros e a melhorar a manutenção do código.
-- **Pacote de Frontend**: Ant Design: Pacote de UI simples será utilizado para construir a interface do usuário.
+- **Ant Design**: Pacote de UI utilizado para construir a interface do usuário.
 - **Groq**: API Generativa usada para processar a descrição da vaga e gerar o roadmap de estudo.
+- **i18next**: Biblioteca para internacionalização e tradução da aplicação.
 
 ## Estrutura do Projeto
 
 ### Frontend
 
-- **Interface do Usuário**: TODO
+- **Interface do Usuário**:
+  - **Páginas**:
+    - **Home**: Página inicial do site que explica seu propósito e fornece um botão para navegar para a página de análise de vagas.
+    - **Analyze Job**: Página onde o usuário pode colar a descrição da vaga, adicionar informações opcionais sobre nível atual, stacks e tecnologias, e obter o detalhamento das tecnologias e o roadmap de estudo.
+  - **Componente `AnalyzeJobPage`**: 
+    - **Campos**:
+      - **Job Description**: Campo de texto obrigatório onde o usuário cola a descrição da vaga.
+      - **Current Level**: Seletor para escolher o nível atual do candidato (Iniciante, Junior, Pleno, Senior).
+      - **Stack**: Campo de texto onde o usuário pode adicionar stacks que trabalha.
+      - **Technologies**: Campo de texto onde o usuário pode adicionar tecnologias que domina.
+    - **Botão de Análise**: Centralizado na página e responsável por enviar a solicitação para a API e exibir o resultado.
+    - **Resultado**: Exibição do retorno da API usando `ReactMarkdown` para renderizar o conteúdo em Markdown.
+  - **Estilos**:
+    - **Tema Escuro**: Implementado usando CSS para alternar entre tema claro e escuro.
+    - **Layout**: Centralização do formulário e botão na tela. Estilos aplicados para garantir uma boa usabilidade e aparência.
 
 ### Backend
 
@@ -23,6 +38,13 @@ Este projeto visa criar uma ferramenta para ajudar estudantes e desenvolvedores 
   - **Classe de Serviço (`groqService.ts`)**: Encapsula a lógica de interação com a API do Groq. Faz a chamada para a API e retorna as respostas necessárias.
   - **Rota de Teste (`test-groq`)**: Permite verificar a integração com a API do Groq e realizar testes iniciais.
   - **Rota Principal de Análise (`analyze-job`)**: Recebe a descrição da vaga, cria o prompt, e faz a chamada para a API do Groq. Esta rota processa a descrição da vaga e retorna o detalhamento das tecnologias e o roadmap de estudo.
+
+## Tradução e Internacionalização
+
+- **i18next**: Utilizado para internacionalizar a aplicação, permitindo a tradução dos textos nas páginas. A tradução é aplicada a todas as partes do formulário e mensagens de interface.
+- **Arquivo de Tradução**:
+  - **`public/locales/en/translation.json`**: Contém as traduções em inglês.
+  - **`public/locales/pt/translation.json`**: Contém as traduções em português.
 
 ## Aprendizado
 
